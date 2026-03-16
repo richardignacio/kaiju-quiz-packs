@@ -1,0 +1,162 @@
+{
+  "id": "dfir-intro-pack-001b",
+  "name": "Intro to Digital Forensics and IR (Mixed Types)",
+  "description": "Fundamental DFIR concepts with single, multiple-select, and true/false questions.",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the NIST incident response lifecycle, which of the following is NOT one of the four primary phases?",
+      "answers": [
+        "Preparation",
+        "Detection and Analysis",
+        "Containment, Eradication, and Recovery",
+        "Risk Registration"
+      ],
+      "correctAnswers": [3],
+      "type": "single",
+      "defaultTimeSeconds": 45,
+      "references": [
+        "NIST SP 800-61 Rev. 2, \"Computer Security Incident Handling Guide\" – Section 2.1 Incident Response Life Cycle lists Preparation; Detection & Analysis; Containment, Eradication & Recovery; Post-Incident Activity. Risk registration is not a defined phase. [web:2][web:3][web:19][web:24]"
+      ]
+    },
+    {
+      "id": "q2_tf",
+      "question": "NIST defines a cybersecurity incident as an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system or the information it processes, stores, or transmits, or that constitutes a violation or imminent threat of violation of security policies or acceptable use policies.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswers": [0],
+      "type": "true-false",
+      "defaultTimeSeconds": 40,
+      "references": [
+        "NIST CSRC Glossary definition of \"incident\" and NIST SP 800-61 Rev. 2 use this wording for a computer security incident. [web:4][web:2][web:3]"
+      ]
+    },
+    {
+      "id": "q3_tf",
+      "question": "In NIST SP 800-86, the first high-level step of the forensic process is Collection, followed by Examination, Analysis, and Reporting.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswers": [0],
+      "type": "true-false",
+      "defaultTimeSeconds": 40,
+      "references": [
+        "NIST SP 800-86 describes a four-step forensic process: Collection, Examination, Analysis, and Reporting, in that sequence. [web:7][web:22][web:25]"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "According to RFC 3227's order of volatility guidance, which type of data should generally be collected FIRST on a typical live system?",
+      "answers": [
+        "Disk images from hard drives",
+        "CPU registers and cache",
+        "Archived log files stored on backup media",
+        "Printed copies of system configurations"
+      ],
+      "correctAnswers": [1],
+      "type": "single",
+      "defaultTimeSeconds": 45,
+      "references": [
+        "RFC 3227, \"Guidelines for Evidence Collection and Archiving\" lists registers and cache as the most volatile data to be collected first, ahead of memory, temporary file systems, and disks. [web:11][web:21][web:23]"
+      ]
+    },
+    {
+      "id": "q5_ms",
+      "question": "Which of the following are primary goals of applying digital forensics in organizations, as described in NIST SP 800-86?",
+      "answers": [
+        "To help investigate computer security incidents",
+        "To troubleshoot information technology operational problems",
+        "To design and standardize new cryptographic algorithms",
+        "To provide practical guidance on computer and network forensic techniques"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "type": "multiple",
+      "defaultTimeSeconds": 60,
+      "references": [
+        "NIST SP 800-86 states that its purpose is to help organizations investigate computer security incidents and troubleshoot IT operational problems by providing practical guidance on computer and network forensics. Designing cryptographic algorithms is not listed as a goal. [web:7][web:20][web:22]"
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Which NIST Special Publication focuses specifically on integrating forensic techniques into incident response processes?",
+      "answers": [
+        "NIST SP 800-37",
+        "NIST SP 800-61",
+        "NIST SP 800-86",
+        "NIST SP 800-53"
+      ],
+      "correctAnswers": [2],
+      "type": "single",
+      "defaultTimeSeconds": 30,
+      "references": [
+        "NIST SP 800-86 is titled \"Guide to Integrating Forensic Techniques into Incident Response\" and provides guidance for incorporating digital forensics into incident handling. [web:20][web:22]"
+      ]
+    },
+    {
+      "id": "q7_tf",
+      "question": "In the NIST incident response lifecycle, Post-Incident Activity is the phase that focuses on lessons learned and improving future response capabilities.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswers": [0],
+      "type": "true-false",
+      "defaultTimeSeconds": 40,
+      "references": [
+        "NIST SP 800-61 Rev. 2 identifies Post-Incident Activity as the phase for reviewing incidents, capturing lessons learned, and updating processes and controls. [web:2][web:3][web:6][web:19][web:24]"
+      ]
+    },
+    {
+      "id": "q8_ms",
+      "question": "Which statements accurately describe how NIST positions the relationship between digital forensics and incident response?",
+      "answers": [
+        "Digital forensics provides techniques and evidence that support and enhance incident response activities",
+        "Digital forensics is integrated into incident response processes rather than treated as a completely separate discipline",
+        "Incident response is only needed when digital forensics capabilities are unavailable",
+        "Digital forensics is useful for both computer security incident investigations and general IT troubleshooting"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "type": "multiple",
+      "defaultTimeSeconds": 60,
+      "references": [
+        "NIST SP 800-86 explains how forensic techniques are integrated into the incident response process to improve detection and understanding of attacks and to troubleshoot IT operational issues, emphasizing a complementary and integrated relationship. [web:7][web:20][web:22]"
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "According to NIST incident handling guidance, which of the following activities is typically part of the Preparation phase?",
+      "answers": [
+        "Performing root cause analysis after an incident",
+        "Collecting volatile memory from a compromised host",
+        "Developing incident response policies, procedures, and communication plans",
+        "Notifying external regulators about a data breach"
+      ],
+      "correctAnswers": [2],
+      "type": "single",
+      "defaultTimeSeconds": 45,
+      "references": [
+        "NIST SP 800-61 Rev. 2 describes the Preparation phase as including development of incident response policies, procedures, communication plans, and tools before incidents occur. [web:2][web:3][web:6][web:17][web:24]"
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Which ordering BEST aligns with the four high-level steps of the forensics process described in NIST SP 800-86?",
+      "answers": [
+        "Identification, Containment, Eradication, Recovery",
+        "Collection, Examination, Analysis, Reporting",
+        "Preparation, Detection, Analysis, Review",
+        "Acquisition, Preservation, Presentation, Destruction"
+      ],
+      "correctAnswers": [1],
+      "type": "single",
+      "defaultTimeSeconds": 45,
+      "references": [
+        "NIST SP 800-86 presents the forensics process as four phases: Collection, Examination, Analysis, and Reporting. [web:7][web:22][web:25]"
+      ]
+    }
+  ]
+}
+
